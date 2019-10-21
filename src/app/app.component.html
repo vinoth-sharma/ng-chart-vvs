@@ -1,0 +1,53 @@
+<!-- Bar Chart -->
+<div id="barChart" class="barChart" style="width: 800px;height: 900px;">
+  <app-bar-chart 
+    [selectorDiv] = "'barChart'"
+    [barChartData] = "barChartData"
+    [barColor] = "'blue'"
+    [yAxisLabel] = "'Population (M)'"
+    [xAxisLabel]="'Year'"
+    [xAxisColumn] = "barChartXAxis"
+    [yAxisColumn] = "barChartYAxis"
+    [chartTitle]="'Sample Bar Chart'"></app-bar-chart>
+</div>
+
+<!-- Line Chart -->
+<div id="lineChart" class="lineChart">
+  <app-line-chart 
+    [selectorDiv]="'lineChart'"
+    [lineChartData]="lineChartData"
+    [lineColor] = "'#ff0000'"
+    [yAxisLabel]="'Population (M)'"
+    [xAxisLabel]="'Year'"
+    [xAxisColumn] = "lineChartXAxis"
+    [yAxisColumn] = "lineChartYAxis"
+    [chartTitle]="'Sample Line Chart'"></app-line-chart>
+</div>
+
+<!-- Pie Chart -->
+<div id="pieChart" class="pieChart">
+  <app-pie-chart 
+    [selectorDiv] = "'pieChart'"
+    [pieChartData]="pieChartData"
+    [chartTitle]="'Sample Pie Chart'"
+    ></app-pie-chart>
+</div>
+
+<!-- Scatter Plot -->
+<div id="scatterPlot" class="scatterPlot">
+  <app-scatter-plot
+    [selectorDiv]="'scatterPlot'"
+    [scatterPlotData]="scatterPlotData"
+    [xAxisLabel]="'Year'"
+    [yAxisLabel]="'Population (M)'"
+    [dotColor]="'#fe4b83'"
+    [chartTitle]="'Sample Scatter Plot'">
+  </app-scatter-plot>
+</div>
+
+
+
+
+
+
+
